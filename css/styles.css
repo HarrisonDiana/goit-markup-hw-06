@@ -161,8 +161,8 @@ margin-right: 76px;
 }
 .contacts {
     font-style: normal;
-    /* Исправлено: убран курсив */
 }
+
 .contacts-link {
     text-decoration: none;
     line-height: 1.5;
@@ -184,19 +184,18 @@ margin-right: 76px;
     color: #404bbf;
 }
 
-/* Hero секция */
-/* Убираем все отступы у секции */
+
 .business {
     margin: 0;
     padding: 0;
 }
 
-/* Блок hero — теперь он занимает всю ширину и всю высоту экрана */
+
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Вся высота экрана */
-    background-image: url('../images/hero-background.jpg'); /* Подставь правильный путь к твоей картинке */
+    height: 100vh; 
+    background-image: url('../images/hero-background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -221,7 +220,7 @@ margin-right: 76px;
 /* Контейнер с текстом и кнопкой */
 .hero .container {
     position: relative;
-    z-index: 2; /* Поверх overlay */
+    z-index: 2; 
 }
 
 /* Заголовок */
@@ -270,11 +269,11 @@ margin-right: 76px;
 .icon-wrapper {
     width: 264px;
     height: 112px;
-    background-color: #f4f4fd; /* Светлый фон как на макете */
+    background-color: #f4f4fd; 
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px; /* Расстояние до заголовка */
+    margin-bottom: 8px; 
     border-radius: 4px;
     border: 1px solid #2E2F42;
     box-sizing: border-box;
@@ -327,7 +326,7 @@ margin-right: 76px;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    flex-basis: calc((100% - 3 * 24px) / 4); /* 4 карточки в ряд */
+    flex-basis: calc((100% - 3 * 24px) / 4); 
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
@@ -441,6 +440,52 @@ margin-right: 76px;
     list-style: none;
     width: calc((100% - 48) / 3);
     margin: 0;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 250ms ease;
+}
+.portfolio-list-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Картинка внутри обертки */
+.portfolio-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Скрытый оверлей */
+.portfolio-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.8); /* Полупрозрачный синий */
+    color: white;
+    padding: 40px 32px 32px 32px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    overflow-y: auto; 
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+/* Оверлей выезжает только при наведении на li */
+.portfolio-list-item:hover .portfolio-overlay-text {
+    transform: translateY(0);
+    box-shadow: 
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-title {
@@ -480,6 +525,15 @@ margin-right: 76px;
     align-items: flex-end;
 }
 
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info {
+    max-width: 264px;
+}
+
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -504,4 +558,58 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px; 
+}
+
+/* Секция с соцсетями */
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    min-width: 208px;
+}
+
+.footer-social-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+/* Список соцсетей */
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Иконки в кружках */
+.footer-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms ease;
+}
+
+.footer-social-link img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Делаем иконки белыми */
+}
+
+/* Ховер-эффект */
+.footer-social-link:hover {
+    background-color: #31d0aa;
 }
