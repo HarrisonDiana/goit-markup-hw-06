@@ -465,8 +465,6 @@ margin-right: 76px;
 .portfolio-thumb {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
 }
 
 /* Картинка внутри обертки */
