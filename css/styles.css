@@ -381,7 +381,7 @@ margin-right: 76px;
     height: 40px;
 }
 
-.social-link {
+.social-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,14 +392,15 @@ margin-right: 76px;
     transition: background-color 250ms ease;
 }
 
-.social-link img {
-    width: 16px;
-    height: 16px;
+.social-list-link svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: #404bbf;
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #31d0aa;
 }
 
 /* Секция портфолио */
@@ -557,7 +558,7 @@ margin-right: 76px;
 }
 
 /* Секция с соцсетями */
-.footer-socials {
+.footer-section {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -583,12 +584,12 @@ margin-right: 76px;
 }
 
 /* Иконки в кружках */
-.footer-social-item {
+.footer-social {
     width: 40px;
     height: 40px;
 }
 
-.footer-social-link {
+.footer-social-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -599,13 +600,13 @@ margin-right: 76px;
     transition: background-color 250ms ease;
 }
 
-.footer-social-link img {
+.footer-social-list-link svg {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* Делаем иконки белыми */
+    fill: #fff;
 }
-
 /* Ховер-эффект */
-.footer-social-link:hover {
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
     background-color: #31d0aa;
 }
