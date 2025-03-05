@@ -589,6 +589,7 @@ margin-right: 76px;
     gap: 16px;
     align-items: flex-start;
     min-width: 208px;
+    margin-right: 120px;
 }
 
 .footer-social-title {
@@ -598,6 +599,7 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     color: #fff;
     gap: 16px;
+    margin-bottom: 16px; 
 }
 
 /* Список соцсетей */
