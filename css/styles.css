@@ -589,8 +589,6 @@ margin-right: 76px;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-    min-width: 208px;
-    margin-right: 120px;
 }
 
 .footer-social-title {
