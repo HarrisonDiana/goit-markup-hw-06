@@ -408,11 +408,16 @@ margin-right: 76px;
     background-color: #404bbf;
 }
 
-.social-icon {
+.team .social-icon {
     width: 16px;
     height: 16px;
     fill: var(--icon-color);
 }
+
+:root {
+    --icon-color: #f4f4fd;
+}
+
 /* Секция портфолио */
 .portfolio ul {
     padding: 0;
@@ -547,6 +552,7 @@ margin-right: 76px;
 .footer-info {
     max-width: 264px;
     margin-right: 120px;
+    margin-bottom: 16px;
 }
 
 .footer-logo {
