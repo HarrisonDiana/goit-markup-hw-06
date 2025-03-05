@@ -409,9 +409,9 @@ margin-right: 76px;
 }
 
 .social-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--icon-color);
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd ;
 }
 /* Секция портфолио */
 .portfolio ul {
@@ -591,12 +591,13 @@ margin-right: 76px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    gap: 16px;
 }
 
 /* Список соцсетей */
 .footer-social-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     list-style: none;
     padding: 0;
     margin: 0;
