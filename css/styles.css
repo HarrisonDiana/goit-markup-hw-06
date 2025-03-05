@@ -211,10 +211,6 @@ margin-right: 76px;
 
 
 /* Контейнер с текстом и кнопкой */
-.container {
-    position: relative;
-    z-index: 2; 
-}
 
 /* Заголовок */
 .business-title {
@@ -547,13 +543,10 @@ margin-right: 76px;
 .footer-container {
     display: flex;
     align-items: baseline;
-    margin-right: 120px;
 }
 
 .footer-info {
-    max-width: 264px;
     margin-right: 120px;
-    margin-bottom: 16px;
 }
 
 .footer-logo {
