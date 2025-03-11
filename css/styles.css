@@ -706,7 +706,7 @@ margin-right: 76px;
     fill: #fff;
     margin-left: 16px;
 }
-.button-footer-form:hover, .bt-ft-form:focus{
+.button-footer-form:hover, .button-footer-form:focus{
     background-color: #404BBF;
 }
 
